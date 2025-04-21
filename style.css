@@ -1,0 +1,418 @@
+/* Reseta estilos para garantir consistência */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Estilo para as imagens */
+img {
+    border-radius: 12px;
+}
+
+/* Fonte personalizada */
+body {
+    font-family: 'Roboto', sans-serif;
+    /* Fonte mais simples */
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Poppins', sans-serif;
+    /* Fonte para títulos */
+}
+
+/* Ajustes para o cabeçalho fixo */
+header {
+    background: linear-gradient(90deg, #3a7d44, #50a25d);
+    padding: 10px 0;
+    color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+header h1 {
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #d0f0dc;
+    text-decoration: underline;
+}
+
+/* Seção dos serviços */
+#servicos {
+    padding: 60px 20px;
+    background-color: #f4f4f4;
+}
+
+#servicos h2 {
+    text-align: center;
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+    color: #2e8b57;
+}
+
+#servicos .servico {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#servicos .servico img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-right: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+#servicos .servico img:hover {
+    transform: scale(1.1);
+}
+
+#servicos .servico h3 {
+    font-size: 1.6rem;
+    margin: 0;
+    color: #333;
+}
+
+#servicos .servico p {
+    font-size: 1rem;
+    color: #666;
+    max-width: 500px;
+}
+
+/* Seção de contato */
+#contato {
+    background: linear-gradient(to right, #f0f9f4, #ffffff);
+    padding: 60px 0;
+}
+
+#contato h2 {
+    text-align: center;
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+    color: #2e8b57;
+}
+
+#contato form {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.input-container {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+
+.input-container i {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #2e8b57;
+    font-size: 1.2rem;
+}
+
+#contato input,
+#contato textarea {
+    padding: 15px 15px 15px 40px; /* Espaçamento extra à esquerda para ícones */
+    margin-bottom: 15px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    width: 100%;
+    transition: all 0.3s;
+}
+
+
+#contato button {
+    padding: 10px;
+    background-color: #3cb371;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+#contato input:focus,
+#contato textarea:focus {
+    border-color: #4caf50;
+    outline: none;
+    box-shadow: 0 0 8px rgba(76, 175, 80, 0.3);
+}
+#contato button:hover {
+    background-color: #2e8b57;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+section {
+    padding: 60px 0;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 12px;
+    margin: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+section h2 {
+    margin-bottom: 15px;
+    font-size: 2.2rem;
+    text-align: center;
+}
+
+section p {
+    margin-bottom: 20px;
+    text-align: center;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+section img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto 30px auto;
+}
+
+/* Formulário */
+form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin: 0 auto;
+    display: block;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 2px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+    transition: all 0.3s;
+}
+
+form input:focus,
+form textarea:focus {
+    border-color: #4caf50;
+    outline: none;
+    box-shadow: 0 0 8px rgba(76, 175, 80, 0.3);
+}
+
+form button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 4px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s, transform 0.3s;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+form button:hover {
+    background-color: #388e3c;
+    transform: scale(1.05);
+}
+
+form button:active {
+    background-color: #2e7d32;
+    transform: scale(1);
+}
+
+/* Animações para os títulos */
+h2 {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+h2.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Equipe */
+#equipe .equipe-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+#equipe .membro {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+#equipe .membro:hover {
+    transform: scale(1.05);
+}
+
+#equipe .membro img {
+    width: 100%;
+    max-width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+#equipe .membro h3 {
+    margin: 0;
+    font-size: 1.2rem;
+    color: #2e8b57;
+}
+
+#equipe .membro p {
+    margin-top: 5px;
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Rodapé */
+footer {
+    background: linear-gradient(90deg, #2e8b57, #4caf50);
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+    font-size: 0.95rem;
+    margin-top: 40px;
+    border-top: 2px solid #d0f0dc;
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+footer a {
+    color: #d0f0dc;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: white;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        padding: 15px;
+        gap: 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    #servicos .servico {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #servicos .servico img {
+        margin: 0 0 20px 0;
+    }
+
+    form,
+    #contato form {
+        width: 90%;
+    }
+}
+
+/* Estilo para ícones sociais */
+.social-icons a {
+    font-size: 1.5rem;
+    margin: 0 15px;
+    color: white;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.social-icons a:hover {
+    color: #d0f0dc;
+    transform: scale(1.2);
+}
+
+/* Botão flutuante "voltar ao topo" */
+.voltar-topo {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #2e8b57;
+    color: white;
+    padding: 12px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 1.2rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    z-index: 1001;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.voltar-topo:hover {
+    background-color: #45a06b;
+    transform: scale(1.1);
+}
