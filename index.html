@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clínica Vida Saudável</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <h1>Clínica Vida Saudável</h1>
+            <nav aria-label="Navegação principal">
+                <ul>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#servicos">Serviços</a></li>
+                    <li><a href="#equipe">Equipe</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="sobre">
+        <div class="container">
+            <h2>Sobre a Clínica</h2>
+            <p>
+                A Clínica Vida Saudável oferece uma abordagem completa para o cuidado com a saúde.
+                Nossos serviços incluem atendimentos médicos, exames laboratoriais e de imagem,
+                além de acompanhamento nutricional e outros procedimentos especializados.
+                Nosso objetivo é oferecer um atendimento humanizado, com conforto, tecnologia e excelência.
+            </p>
+            <img src="img/clinica.jpg" alt="Foto da fachada da Clínica Vida Saudável" />
+        </div>
+    </section>
+
+    <section id="servicos">
+        <div class="container">
+            <h2>Serviços da Clínica</h2>
+            <p>
+                Oferecemos uma gama completa de serviços para cuidar de sua saúde com qualidade e excelência.
+                Confira os nossos principais serviços abaixo:
+            </p>
+            <div class="servico">
+                <img src="img/atendimento-medico.jpg" alt="Profissional de saúde realizando atendimento médico">
+                <h3>Atendimento Médico</h3>
+                <p>Consultas com médicos especializados em diversas áreas da saúde, oferecendo um atendimento humanizado
+                    e eficiente.</p>
+            </div>
+            <div class="servico">
+                <img src="img/exames-laboratoriais.jpg" alt="Equipamentos de exames laboratoriais">
+                <h3>Exames Laboratoriais</h3>
+                <p>Realização de exames laboratoriais com resultados rápidos e precisos para um diagnóstico eficiente.
+                </p>
+            </div>
+            <div class="servico">
+                <img src="img/nutricao.jpg" alt="Nutricionista em atendimento">
+                <h3>Aconselhamento Nutricional</h3>
+                <p>Consultoria nutricional personalizada para ajudar você a alcançar seus objetivos de saúde e
+                    bem-estar.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="equipe">
+        <div class="container">
+            <h2>Conheça Nossa Equipe</h2>
+            <p>Profissionais dedicados à sua saúde e bem-estar.</p>
+
+            <div class="equipe-grid">
+                <div class="membro">
+                    <img src="img/medico1.jpg" alt="Foto do Dr. João Silva, Clínico Geral">
+                    <h3>Dr. João Silva</h3>
+                    <p>Clínico Geral</p>
+                </div>
+
+                <div class="membro">
+                    <img src="img/medico2.jpg" alt="Foto da Dra. Maria Souza, Cardiologista">
+                    <h3>Dra. Maria Souza</h3>
+                    <p>Cardiologista</p>
+                </div>
+
+                <div class="membro">
+                    <img src="img/medico3.jpg" alt="Foto da Dra. Ana Oliveira, Nutricionista">
+                    <h3>Dra. Ana Oliveira</h3>
+                    <p>Nutricionista</p>
+                </div>
+
+                <div class="membro">
+                    <img src="img/medico4.jpg" alt="Foto do Dr. Paulo Mendes, Ortopedista">
+                    <h3>Dr. Paulo Mendes</h3>
+                    <p>Ortopedista</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato">
+        <div class="container">
+            <h2>Contato</h2>
+            <p>Entre em contato com a Clínica Vida Saudável para saber mais sobre nossos serviços.</p>
+    
+            <form id="formulario">
+                <div class="input-container">
+                    <i class="fas fa-user"></i>
+                    <input type="text" id="nome" name="nome" required placeholder="Seu Nome">
+                </div>
+                
+                <div class="input-container">
+                    <i class="fas fa-envelope"></i>
+                    <input type="email" id="email" name="email" required placeholder="Seu E-mail">
+                </div>
+                
+                <div class="input-container">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <input type="text" id="cidade" name="cidade" required placeholder="Cidade">
+                </div>
+                
+                <div class="input-container">
+                    <i class="fas fa-globe-americas"></i>
+                    <input type="text" id="estado" name="estado" required placeholder="Estado">
+                </div>
+    
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Botão voltar ao topo -->
+    <a href="#topo" class="voltar-topo" aria-label="Voltar ao topo">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+    <body id="topo">
+
+    <!-- Rodapé -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Clínica Vida Saudável. Todos os direitos reservados.</p>
+            <p>Desenvolvido por Filipe Gomes de Jesus</p>
+            <div class="social-icons">
+                <a href="https://wa.me/seunumero" target="_blank" aria-label="WhatsApp">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+                <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('formulario').addEventListener('submit', function (event) {
+            event.preventDefault();
+            alert('Formulário enviado com sucesso!');
+        });
+    </script>
+
+<script>
+    document.querySelector('.voltar-topo').addEventListener('click', function(event) {
+        event.preventDefault(); // Impede o comportamento padrão do link
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth' // Rolagem suave
+        });
+    });
+</script>
+
+
+</body>
+
+</html>
